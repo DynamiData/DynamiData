@@ -46,5 +46,5 @@ let serialiseLibrary (library: Library) =
     "books", library.Books |> List.map serialiseBook
   ]
 
-let json = localCommunityLibrary |> serialiseLibrary |> str
+let json = localCommunityLibrary |> serialiseLibrary |> string
 ```
